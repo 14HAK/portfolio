@@ -7,6 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# server-portfolio
+portfolio_server/node_modules
+portfolio_server/manage
+
 node_modules
 dist
 dist-ssr
