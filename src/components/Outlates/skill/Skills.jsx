@@ -1,7 +1,10 @@
+import Progress from './progress/Progress';
+
 const Skills = () => {
   return (
-    <main className='flex justify-center items-center w-[100%] h-screen m-auto bg-slate-900'>
-      <p>this is skillls page</p>
+    <main className='flex flex-col justify-end items-center w-[100%] h-auto py-36 m-auto bg-slate-900'>
+      <Progress></Progress>
+      <Progress></Progress>
     </main>
   );
 };
