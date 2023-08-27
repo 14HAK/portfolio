@@ -10,6 +10,7 @@ lerna-debug.log*
 # server-portfolio
 portfolio_server/node_modules
 portfolio_server/manage
+portfolio_server/.env
 
 node_modules
 dist
