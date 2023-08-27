@@ -6,10 +6,7 @@ const SingleBlog = () => {
           src='https://hashnode.com/utility/r?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1613283743682%2F5wWjMdq3O.png%3Fw%3D1200%26h%3D630%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp%26fm%3Dpng'
           className='object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-'
         />
-        <p
-          className='bg-green-500 flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
-            rounded-full uppercase inlineBlock'
-        >
+        <p className='bg-green-500 flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3 rounded-full uppercase inlineBlock'>
           SUMMER CAMP
         </p>
         <a className='text-lg font-bold sm:text-xl md:text-2xl'>

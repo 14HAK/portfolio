@@ -6,6 +6,7 @@ import Projects from '../components/Outlates/projects/Projects';
 import Skills from '../components/Outlates/skill/Skills';
 import Blog from '../components/Outlates/blog/Blog';
 import Contact from '../components/Outlates/contact/Contact';
+import Demo from '../components/demo/Demo';
 
 const router = createBrowserRouter([
   {
