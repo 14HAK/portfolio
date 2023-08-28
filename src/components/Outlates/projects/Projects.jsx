@@ -1,10 +1,11 @@
 import UseGetRepos from '../../hooks/UseGetRepos';
+import Spinner from '../../loader/Spinner';
 import SingleProject from './singleProject/SingleProject';
 
 const Projects = () => {
   const [isLoading, error, data] = UseGetRepos();
 
-  if (isLoading) return 'Loading...';
+  if (isLoading) return <Spinner></Spinner>;
 
   if (error) return 'An error has occurred: ' + error.message;
 

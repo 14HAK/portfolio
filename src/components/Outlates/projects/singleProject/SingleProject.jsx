@@ -2,8 +2,16 @@ import { Link } from 'react-router-dom';
 import TechnologyBtn from '../technology/TechnologyBtn';
 
 const SingleProject = ({ project }) => {
-  const { technologies, finishDate, projectName, overview, sitePreview } =
-    project;
+  const {
+    technologies,
+    siteImg,
+    finishDate,
+    projectName,
+    overview,
+    sitePreview,
+  } = project;
+
+  console.log(project);
   console.log(technologies);
 
   return (
@@ -11,8 +19,8 @@ const SingleProject = ({ project }) => {
       <div className='w-full p-4'>
         <div className='bg-slate-800 text-white p-3 rounded-lg'>
           <img
-            className='h-52 rounded w-full object-cover object-center mb-6'
-            src='https://dummyimage.com/720x400'
+            className='h-auto rounded w-full object-cover object-center mb-6'
+            src={siteImg}
             alt='content'
           />
           <h3 className='tracking-widest text-xs pb-1 font-medium title-font'>

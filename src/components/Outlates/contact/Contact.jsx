@@ -1,8 +1,33 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+  const form = useRef();
+
+  const handleEmailJs = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        form.current,
+        'YOUR_PUBLIC_KEY'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className='text-white bg-slate-900 body-font relative'>
       <div className='container px-5 py-24 mx-auto'>
-        <div className='flex flex-col text-center w-full mb-12'>
+        <form ref={form} className='flex flex-col text-center w-full mb-12'>
           <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>
             Contact Us
           </h1>
@@ -10,7 +35,7 @@ const Contact = () => {
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
             gentrify.
           </p>
-        </div>
+        </form>
         <div className='lg:w-1/2 md:w-2/3 mx-auto'>
           <div className='flex flex-wrap -m-2'>
             <div className='p-2 w-1/2'>
@@ -58,7 +83,10 @@ const Contact = () => {
               </div>
             </div>
             <div className='p-2 w-full'>
-              <button className='flex mx-auto text-white bg-[#eb4a4c] border-0 py-2 px-8 focus:outline-none hover:bg-white hover:text-slate-900 transition-transform rounded text-lg'>
+              <button
+                onClick={handleEmailJs}
+                className='flex mx-auto text-white bg-[#eb4a4c] border-0 py-2 px-8 focus:outline-none hover:bg-white hover:text-slate-900 transition-transform rounded text-lg'
+              >
                 Button
               </button>
             </div>

@@ -6,7 +6,7 @@ import Projects from '../components/Outlates/projects/Projects';
 import Skills from '../components/Outlates/skill/Skills';
 import Blog from '../components/Outlates/blog/Blog';
 import Contact from '../components/Outlates/contact/Contact';
-import Demo from '../components/demo/Demo';
+import NotFound from '../components/notfound/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -41,7 +41,15 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact></Contact>,
       },
+      {
+        path: '*',
+        element: <NotFound></NotFound>,
+      },
     ],
+  },
+  {
+    path: '*',
+    element: <NotFound></NotFound>,
   },
 ]);
 
