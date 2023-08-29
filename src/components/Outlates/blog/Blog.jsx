@@ -64,6 +64,8 @@ const Blog = () => {
           <div className='grid grid-cols-12 sm:px-5 gap-x-8 gap-y-16'>
             {/*todo: here all blogs map here */}
             <SingleBlog></SingleBlog>
+            <SingleBlog></SingleBlog>
+            <SingleBlog></SingleBlog>
           </div>
         </div>
       </div>

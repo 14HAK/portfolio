@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import TechnologyBtn from '../technology/TechnologyBtn';
-
+// eslint-disable-next-line react/prop-types
 const SingleProject = ({ project }) => {
   const {
     technologies,
@@ -10,23 +10,27 @@ const SingleProject = ({ project }) => {
     overview,
     sitePreview,
   } = project;
-
-  console.log(project);
-  console.log(technologies);
+  console.log(siteImg);
+  // console.log(project);
+  // console.log(technologies);
 
   return (
     <div>
       <div className='w-full p-4'>
         <div className='bg-slate-800 text-white p-3 rounded-lg'>
-          <img
-            className='h-auto rounded w-full object-cover object-center mb-6'
-            src={siteImg}
-            alt='content'
-          />
-          <h3 className='tracking-widest text-xs pb-1 font-medium title-font'>
+          <div className='w-auto h-60 overflow-y-scroll rounded-md mb-3'>
+            <img
+              className='h-auto rounded w-full object-cover object-center mb-6'
+              srcSet={
+                !siteImg ? 'https://i.ibb.co/xg7XHhB/toy-world.png' : siteImg
+              }
+              alt={siteImg}
+            />
+          </div>
+          <h3 className='tracking-widest text-xs pb-[2px] font-medium title-font'>
             {finishDate}
           </h3>
-          <h2 className='text-lg font-medium title-font mb-4'>
+          <h2 className='text-lg font-bold title-font mb-4'>
             {projectName}{' '}
             <Link to={`${sitePreview}`} target={'_blank'}>
               <span className='font-semibold px-2 py-[2px] text-[12px] rounded-full bg-[#eb4a4c] text-slate-200 hover:bg-slate-900 hover:border hover:border-rose-300 transition-all'>
