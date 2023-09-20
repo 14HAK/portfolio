@@ -21,7 +21,7 @@ const SingleProject = ({ project }) => {
           <div className='w-auto h-60 overflow-y-scroll rounded-md mb-3'>
             <img
               className='h-auto rounded w-full object-cover object-center mb-6'
-              srcSet={
+              src={
                 !siteImg ? 'https://i.ibb.co/xg7XHhB/toy-world.png' : siteImg
               }
               alt={siteImg}

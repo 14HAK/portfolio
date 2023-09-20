@@ -6,7 +6,7 @@ const About = () => {
     <section className='flex justify-center items-center w-[100%] md:h-auto lg:h-screen m-auto bg-slate-900'>
       <main className='text-white  grid md:grid-cols-1 lg:grid-cols-2 w-7/12 gap-5'>
         <section className='p-5'>
-          <div className='w-full h-full rounded-full bg-gradient-to-bl from-[#EB4A4C] via-red-200 to-[#EB4A4C] overflow-hidden'>
+          <div className='w-10/12 h-10/12 rounded-full bg-gradient-to-bl from-[#EB4A4C] via-red-200 to-[#EB4A4C] overflow-hidden'>
             <img
               src='https://raw.githubusercontent.com/14HAK/Mern-2023/master/profile_pic2-removebg-preview.png'
               alt=''
@@ -17,14 +17,17 @@ const About = () => {
           <h3 className='text-4xl pb-2 uppercase font-bold'>
             Dulon <span className='text-[#eb4a4c]'>Mahadi</span>
           </h3>
-          <h4 className='text-xl pb-10 capitalize font-semibold'>
+          <h4 className='text-xl pb-5 capitalize font-semibold'>
             <span className='uppercase text-[#eb4a4c]'>mern</span> stack
             developer
           </h4>
           <p className='text-xl text-gray-300 pb-5'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            corrupti delectus ratione consequuntur repellat illum qui esse quis,
-            inventore vitae.
+            Hi, i am Dulon Mahadi - As a MERN stack developer with a year of
+            experience in web development. I have a strong foundation in
+            JavaScript, React, Node-express, MongoDB, NPM, and so on. I'm
+            passionate about creating scalable and efficient web applications.
+            Always, I enjoy exploring new technologies and contributing to
+            open-source projects.
           </p>
           <button
             onClick={() => window.my_modal_4.showModal()}
@@ -82,11 +85,11 @@ const About = () => {
                   <h2>Summer Kids Sports</h2>
                   <h3 className='text-sm opacity-50'>23, Jun – 10, July</h3>
                   <Link
-                    to={''}
+                    to={'https://summer-camp-client-f20fe.web.app'}
                     className='text-sm text-[#f35d5f] underline'
                     target='_blank'
                   >
-                    preview provide valid link:
+                    preview
                   </Link>
                 </div>
                 <div className='w-3/5'>
