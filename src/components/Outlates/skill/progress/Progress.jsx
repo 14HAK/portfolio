@@ -1,5 +1,15 @@
+import UseGetSkill from '../../../hooks/UseGetSkill';
+import Spinner from '../../../loader/Spinner';
+import NotFound from '../../../notfound/NotFound';
+
 const Progress = ({ skill }) => {
   // console.log(skill);
+
+  const [isLoading, error] = UseGetSkill();
+
+  if (isLoading) return <Spinner></Spinner>;
+  if (error) return <NotFound></NotFound>;
+
   return (
     <div className='flex w-[100%] ml-20 items-center'>
       <h1 className='text-white font-bold pt-5 mr-2'>{skill?.skillName}</h1>

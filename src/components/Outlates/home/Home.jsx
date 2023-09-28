@@ -17,12 +17,11 @@ const Home = () => {
           </button>
         </section>
         <div className='fixed top-[0px] left-[70px]'>
-          <div className='w-[650px] rounded-full'>
+          <div className='rounded-full'>
             <img
               src='https://raw.githubusercontent.com/14HAK/fakeDB/master/profile_pic2-removebg-preview.png'
               alt=''
-              width={650}
-              className='opacity-40'
+              className='opacity-40 w-[400px] lg:w-[600px] xl:w-[650px] 2xl:w-[1000px] '
             />
           </div>
         </div>

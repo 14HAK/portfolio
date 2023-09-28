@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
 import TechnologyBtn from '../technology/TechnologyBtn';
+import Spinner from '../../../loader/Spinner';
+import NotFound from '../../../notfound/NotFound';
+import UseGetRepos from '../../../hooks/UseGetRepos';
 // eslint-disable-next-line react/prop-types
 const SingleProject = ({ project }) => {
+  const [isLoading, error] = UseGetRepos();
+
+  if (isLoading) return <Spinner></Spinner>;
+  if (error) return <NotFound></NotFound>;
+
   const {
     technologies,
     siteImg,
