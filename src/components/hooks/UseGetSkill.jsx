@@ -1,7 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 
 const UseGetSkill = () => {
-  const { isLoading, error, data } = useQuery({
+  const {
+    isLoading,
+    error,
+    data: data = [],
+  } = useQuery({
     queryKey: ['skills'],
     queryFn: async () => {
       const res = await fetch(

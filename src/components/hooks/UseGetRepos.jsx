@@ -1,7 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 
 const UseGetRepos = () => {
-  const { isLoading, error, data } = useQuery({
+  const {
+    isLoading,
+    error,
+    data: data = [],
+  } = useQuery({
     queryKey: ['repositories'],
     queryFn: async () => {
       const res = await fetch(
