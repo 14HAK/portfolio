@@ -11,7 +11,8 @@ const UseGetSkill = () => {
       const res = await fetch(
         'https://portfolio-server-red.vercel.app/api/skills'
       );
-      return res.json();
+      const skills = await res.json();
+      return skills;
     },
   });
 

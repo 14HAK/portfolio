@@ -21,7 +21,7 @@ const Home = () => {
             <img
               src='https://raw.githubusercontent.com/14HAK/fakeDB/master/profile_pic2-removebg-preview.png'
               alt=''
-              className='opacity-40 w-[400px] lg:w-[600px] xl:w-[650px] 2xl:w-[1000px] '
+              className='opacity-40 w-[400px] sm:w-[180px] lg:w-[600px] xl:w-[650px] 2xl:w-[1000px] '
             />
           </div>
         </div>

@@ -11,7 +11,8 @@ const UseGetRepos = () => {
       const res = await fetch(
         'https://portfolio-server-red.vercel.app/api/repos'
       );
-      return res.json();
+      const repos = await res.json();
+      return repos;
     },
   });
 
